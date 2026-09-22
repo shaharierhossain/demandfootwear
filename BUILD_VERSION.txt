@@ -1,0 +1,33 @@
+DEMAND FOOTWEAR — BUILD VERSION
+================================
+
+Build date:     2026-09-20
+Package name:   demand-footwear-v2-production.zip
+File count:     55 files
+
+This is the COMPLETE, CURRENT build. It includes:
+  - Full customer storefront (15 HTML pages)
+  - Full admin dashboard (products, categories, inventory, orders,
+    customers, reports, settings)
+  - Dual-mode data layer (js/config.js + js/api.js):
+      DEMO mode  — works instantly via localStorage, no backend needed
+      LIVE mode  — connects to a real Node/Express/Prisma/PostgreSQL
+                   backend once deployed (see DEPLOYMENT.md)
+  - Bangladesh localization: BDT pricing, VAT-inclusive pricing model,
+    Inside/Outside Dhaka delivery, bKash/Nagad/Rocket/Card/COD payment
+    options (COD-only enabled by default for launch)
+  - Full backend starter in /backend: real authentication (bcrypt +
+    HTTP-only session cookies), transaction-safe inventory/order logic,
+    a seed script that loads the real product catalog + your admin
+    account, and REST endpoints for every admin/customer action.
+
+If you have ANY other file named "demand-footwear.zip" or similar on
+your computer from earlier in this project, delete it before deploying
+to avoid re-uploading an outdated version by mistake.
+
+Key files to check if verifying completeness:
+  js/config.js
+  DEPLOYMENT.md
+  backend/prisma/seed.js
+  backend/src/controllers/review.controller.js
+  backend/src/routes/review.routes.js
