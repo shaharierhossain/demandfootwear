@@ -1,0 +1,7 @@
+node_modules
+backend
+.git
+.wrangler
+*.md
+.env
+.env.*
